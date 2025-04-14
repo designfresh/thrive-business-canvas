@@ -42,7 +42,7 @@ const Header = () => {
             <a
               key={link.label}
               href={link.href}
-              className="text-consultant-navy hover:text-consultant-gold transition-colors font-medium"
+              className="text-white hover:text-consultant-gold transition-colors font-medium"
             >
               {link.label}
             </a>
@@ -69,7 +69,7 @@ const Header = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-consultant-navy hover:text-consultant-gold px-2 py-1 transition-colors"
+                className="text-white hover:text-consultant-gold px-2 py-1 transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.label}
