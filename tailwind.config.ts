@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,16 +64,27 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				consultant: {
-					navy: '#6E59A5', // Changed from dark blue to a deep purple
+					navy: '#6E59A5',
 					gold: '#FFC857',
 					lightBlue: '#E1E8ED',
 					charcoal: '#333333',
 					offWhite: '#F8F9FA'
+				},
+				// New design colors
+				design: {
+					teal: '#3D8D87',
+					coral: '#FF6B56',
+					dark: '#1E1E1E',
+					lightTeal: '#97D4CE',
+					skyBlue: '#9FD9E3',
+					green: '#2C785C',
+					background: '#FFFFFF',
 				}
 			},
 			fontFamily: {
-				heading: ['Georgia', 'serif'],
-				body: ['Inter', 'sans-serif']
+				heading: ["'Inter'", 'sans-serif'],
+				body: ["'Inter'", 'sans-serif'],
+				display: ["'Inter'", 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

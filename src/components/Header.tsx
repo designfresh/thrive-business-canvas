@@ -1,6 +1,6 @@
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { Button } from '../components/ui/button';
 import { cn } from '../lib/utils';
 
 const Header = () => {
@@ -18,8 +18,8 @@ const Header = () => {
 
   const navLinks = [
     { label: 'About', href: '#about' },
-    { label: 'Services', href: '#services' },
-    { label: 'Testimonials', href: '#testimonials' },
+    { label: 'Products', href: '#services' },
+    { label: 'Team', href: '#testimonials' },
     { label: 'Contact', href: '#contact' }
   ];
 
@@ -27,12 +27,15 @@ const Header = () => {
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-        isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'
+        isScrolled ? 'bg-white shadow-sm py-3' : 'bg-transparent py-5'
       )}
     >
       <div className="container mx-auto flex items-center justify-between">
         <a href="#" className="flex items-center">
-          <span className="text-consultant-navy text-2xl font-heading font-bold">Mark <span className="text-consultant-gold">Johnes</span></span>
+          <span className="text-design-dark text-2xl font-heading font-bold">
+            <span className="text-design-teal">D</span>
+            <span className="text-design-dark">2C</span>
+          </span>
         </a>
 
         {/* Desktop navigation */}
@@ -41,19 +44,22 @@ const Header = () => {
             <a
               key={link.label}
               href={link.href}
-              className="text-white hover:text-consultant-gold transition-colors font-medium"
+              className="text-design-dark hover:text-design-teal transition-colors font-medium"
             >
               {link.label}
             </a>
           ))}
-          <Button className="bg-consultant-gold hover:bg-consultant-navy text-consultant-navy hover:text-white transition-colors">
-            Book a Call
-          </Button>
+          <a 
+            href="#contact"
+            className="bg-design-coral rounded-full text-white px-6 py-2 hover:bg-opacity-90 transition-all"
+          >
+            Get in Touch
+          </a>
         </nav>
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden text-consultant-navy"
+          className="md:hidden text-design-dark"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -68,18 +74,19 @@ const Header = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-white hover:text-consultant-gold px-2 py-1 transition-colors"
+                className="text-design-dark hover:text-design-teal px-2 py-1 transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.label}
               </a>
             ))}
-            <Button 
-              className="bg-consultant-gold hover:bg-consultant-navy text-consultant-navy hover:text-white transition-colors mt-2 w-full"
+            <a 
+              href="#contact"
+              className="bg-design-coral text-white rounded-full px-4 py-2 text-center hover:bg-opacity-90 transition-all"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Book a Call
-            </Button>
+              Get in Touch
+            </a>
           </nav>
         </div>
       )}
