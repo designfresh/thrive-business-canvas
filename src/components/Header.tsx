@@ -32,7 +32,7 @@ const Header = () => {
     >
       <div className="container mx-auto flex items-center justify-between">
         <a href="#" className="flex items-center">
-          <span className="text-consultant-navy text-2xl font-heading font-bold">Mark <span className="text-consultant-gold">Jones</span></span>
+          <span className="text-consultant-navy text-2xl font-heading font-bold">Mark <span className="text-consultant-gold">Johnes</span></span>
         </a>
 
         {/* Desktop navigation */}

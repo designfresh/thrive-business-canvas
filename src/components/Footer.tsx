@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <h3 className="text-xl font-bold mb-6">Mark Jones</h3>
+            <h3 className="text-xl font-bold mb-6">Mark Johnes</h3>
             <p className="mb-6 text-gray-300">
               Strategic business consulting services to help your organization grow and succeed in today's competitive landscape.
             </p>
@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
-          <p>&copy; {new Date().getFullYear()} Mark Jones. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Mark Johnes. All rights reserved.</p>
         </div>
       </div>
     </footer>
