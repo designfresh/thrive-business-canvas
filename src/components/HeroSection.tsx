@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '../components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -5,7 +6,10 @@ import { ArrowRight } from 'lucide-react';
 const HeroSection: React.FC = () => {
   return (
     <section className="relative bg-gradient-to-br from-consultant-navy to-[#06142E] text-white min-h-[90vh] flex items-center">
-      <div className="absolute inset-0 bg-[url('/lovable-uploads/14fb909f-b25b-4330-8ae4-5ec585f1f778.png')] bg-cover bg-center opacity-10"></div>
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-10"
+        style={{ backgroundImage: "url('/lovable-uploads/14fb909f-b25b-4330-8ae4-5ec585f1f778.png')" }}
+      ></div>
       <div className="container mx-auto relative z-10">
         <div className="max-w-3xl">
           <h1 className="animate-fade-in font-heading font-bold mb-6">
