@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '../components/ui/button';
@@ -33,7 +32,7 @@ const Header = () => {
     >
       <div className="container mx-auto flex items-center justify-between">
         <a href="#" className="flex items-center">
-          <span className="text-consultant-navy text-2xl font-heading font-bold">Thrive<span className="text-consultant-gold">Consult</span></span>
+          <span className="text-consultant-navy text-2xl font-heading font-bold">Mark <span className="text-consultant-gold">Jones</span></span>
         </a>
 
         {/* Desktop navigation */}
