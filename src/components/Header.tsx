@@ -30,14 +30,7 @@ const Header = () => {
         isScrolled ? 'bg-white shadow-sm py-3' : 'bg-transparent py-5'
       )}
     >
-      <div className="container mx-auto flex items-center justify-between">
-        <a href="#" className="flex items-center">
-          <span className="text-design-dark text-2xl font-heading font-bold">
-            <span className="text-design-teal">D</span>
-            <span className="text-design-dark">2C</span>
-          </span>
-        </a>
-
+      <div className="container mx-auto flex items-center justify-end">
         {/* Desktop navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (

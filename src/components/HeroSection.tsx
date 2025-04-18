@@ -6,7 +6,7 @@ const HeroSection: React.FC = () => {
   return (
     <section className="w-full min-h-screen bg-design-background py-16 lg:py-0 flex items-center">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
           <div className="order-2 lg:order-1">
             <h1 className="mb-2">
               <span className="text-black font-semibold">desire to</span>
@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
           </div>
           
           <div className="order-1 lg:order-2 relative h-[400px] lg:h-[600px]">
-            <div className="absolute top-0 right-0 w-[80%] h-[90%]">
+            <div className="absolute top-0 left-0 lg:left-[-10%] w-[80%] h-[90%]">
               <div className="relative w-full h-full">
                 {/* Phone mockup */}
                 <div className="absolute top-0 right-0 w-[65%] h-full bg-design-dark rounded-[40px] shadow-lg">
