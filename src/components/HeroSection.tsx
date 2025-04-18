@@ -17,7 +17,7 @@ const HeroSection: React.FC = () => {
             <p className="text-lg md:text-xl mb-8 max-w-md">
               Creating thoughtful digital products with real world impact.
             </p>
-            <a href="#services" className="details-button group">
+            <a href="https://markjohnes.substack.com/p/company-info" className="details-button group">
               Details <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
@@ -26,7 +26,7 @@ const HeroSection: React.FC = () => {
             <div className="absolute top-0 left-0 lg:left-[-10%] w-[80%] h-[90%]">
               <div className="relative w-full h-full">
                 {/* Phone mockup */}
-                <div className="absolute top-0 right-0 w-[65%] h-full bg-design-dark rounded-[40px] shadow-lg">
+                <div className="absolute top-0 right-0 w-[45%] h-full bg-design-dark rounded-[40px] shadow-lg">
                   {/* Phone screen with wavy lines */}
                   <div className="absolute inset-1 rounded-[35px] overflow-hidden bg-gradient-to-br from-[#0a2540] to-[#132f4c]">
                     <div className="absolute top-0 left-0 w-full h-full opacity-40">
