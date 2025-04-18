@@ -26,7 +26,7 @@ const HeroSection: React.FC = () => {
             <div className="absolute top-0 left-0 lg:left-[-10%] w-[80%] h-[90%]">
               <div className="relative w-full h-full">
                 {/* Phone mockup */}
-                <div className="absolute top-0 right-0 w-[45%] h-full bg-design-dark rounded-[40px] shadow-lg">
+                <div className="absolute top-0 right-0 w-[55%] h-full bg-design-dark rounded-[40px] shadow-lg">
                   {/* Phone screen with wavy lines */}
                   <div className="absolute inset-1 rounded-[35px] overflow-hidden bg-gradient-to-br from-[#0a2540] to-[#132f4c]">
                     <div className="absolute top-0 left-0 w-full h-full opacity-40">
